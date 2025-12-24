@@ -1,1 +1,1 @@
-echo "kubectl-argo-rollouts.exe" >> .gitignore
+kubectl-argo-rollouts.exe
