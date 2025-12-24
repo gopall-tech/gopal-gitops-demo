@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: rollout-demo
-        image: argoproj/rollouts-demo:green
+        image: argoproj/rollouts-demo:blue
         ports:
         - containerPort: 8080
