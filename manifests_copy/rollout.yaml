@@ -1,25 +1,25 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: gopal-bg-demo
+  name: gopal-1-bg-demo
   namespace: default
 spec:
   replicas: 2
   strategy:
     blueGreen: 
-      activeService: gopal-prod
-      previewService: gopal-preview
+      activeService: gopal-prod-1
+      previewService: gopal-preview-1
       autoPromotionEnabled: false
   selector:
     matchLabels:
-      app: gopal-bg
+      app: gopal-bg-1
   template:
     metadata:
       labels:
-        app: gopal-bg
+        app: gopal-bg-1
     spec:
       containers:
-      - name: rollout-demo
+      - name: rollout-demo-1
         image: argoproj/rollouts-demo:green     # chnaged the image from blue(current) to green(the updated)
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
