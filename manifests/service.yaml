@@ -4,7 +4,7 @@ metadata:
   name: gopal-prod
   namespace: default
 spec:
-  type: LoadBalancer
+  type: NodePort        
   selector:
     app: gopal-bg
   ports:
@@ -17,7 +17,7 @@ metadata:
   name: gopal-preview
   namespace: default
 spec:
-  type: LoadBalancer
+  type: NodePort       
   selector:
     app: gopal-bg
   ports:
