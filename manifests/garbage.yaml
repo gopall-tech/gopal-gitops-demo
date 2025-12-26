@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: gopal-garbage-data
-  namespace: default
-data:
-  test: "I am temporary trash, for demo purposes"
